@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function as Arguments</title>
+</head>
+<body>
+    <h1>Function as Arguments</h1>
+    <p id="result"></p>
+    <script>
+        function process(name, callback) {
+            return callback(name);
+        }
+        document.getElementById('result').textContent = process("Alice", (n) => `Hello, ${n}!`);
+    </script>
+</body>
+</html>

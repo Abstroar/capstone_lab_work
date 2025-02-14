@@ -1,0 +1,308 @@
+Microsoft Windows [Version 10.0.26100.2605]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\sem 6\capstone subject\lab>echo "# capstone_lab_week_1" >> README.md
+
+D:\sem 6\capstone subject\lab>git init
+Initialized empty Git repository in D:/sem 6/capstone subject/lab/.git/
+
+D:\sem 6\capstone subject\lab>git add README.md
+
+D:\sem 6\capstone subject\lab>git commit -m "first commit"
+[master (root-commit) 8101a6c] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+D:\sem 6\capstone subject\lab>git branch -M main
+
+D:\sem 6\capstone subject\lab>git remote add origin https://github.com/Abstroar/capstone_lab_week_1.git
+
+D:\sem 6\capstone subject\lab>git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 249 bytes | 124.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Abstroar/capstone_lab_week_1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\sem 6\capstone subject\lab>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        week_1_project/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\sem 6\capstone subject\lab>git add .
+
+D:\sem 6\capstone subject\lab>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   week_1_project/test1.txt
+
+
+D:\sem 6\capstone subject\lab>git commit -m "A new folder with 1 folder and file is added"
+[main ac5860f] A new folder with 1 folder and file is added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 week_1_project/test1.txt
+
+D:\sem 6\capstone subject\lab>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\sem 6\capstone subject\lab>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 403 bytes | 403.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Abstroar/capstone_lab_week_1.git
+   8101a6c..ac5860f  main -> main
+
+D:\sem 6\capstone subject\lab>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   week_1_project/test1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\sem 6\capstone subject\lab>git add .
+
+D:\sem 6\capstone subject\lab>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   week_1_project/test1.txt
+
+
+D:\sem 6\capstone subject\lab>git commit -m "Some changes to the file test1"
+[main bdb5a61] Some changes to the file test1
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+D:\sem 6\capstone subject\lab>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 450 bytes | 450.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Abstroar/capstone_lab_week_1.git
+   ac5860f..bdb5a61  main -> main
+
+D:\sem 6\capstone subject\lab>git log
+commit bdb5a61ec6375093ab0e47bc842d14e23a91250c (HEAD -> main, origin/main)
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:34:28 2025 +0530
+
+    Some changes to the file test1
+
+commit ac5860fb1772f835be29e52c9198c0938db99ee6
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:30:59 2025 +0530
+
+    A new folder with 1 folder and file is added
+
+commit 8101a6c81a73608dd524dbb4451a6911499f531f
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:16:51 2025 +0530
+
+    first commit
+
+D:\sem 6\capstone subject\lab>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        week_1_project/New folder/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\sem 6\capstone subject\lab>git add .
+
+D:\sem 6\capstone subject\lab>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   week_1_project/New folder/test2.txt
+
+
+D:\sem 6\capstone subject\lab>git commit -m "added test 2"s
+[main f33dc3b] added test 2s
+ 1 file changed, 1 insertion(+)
+ create mode 100644 week_1_project/New folder/test2.txt
+
+D:\sem 6\capstone subject\lab>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 436 bytes | 218.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Abstroar/capstone_lab_week_1.git
+   bdb5a61..f33dc3b  main -> main
+
+D:\sem 6\capstone subject\lab>git add .
+
+D:\sem 6\capstone subject\lab>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   week_1_project/New folder/test 3 folder/test 3.txt
+
+
+D:\sem 6\capstone subject\lab>git commit -m "added test 3 foler as well as file "
+[main c4a952a] added test 3 foler as well as file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 week_1_project/New folder/test 3 folder/test 3.txt
+
+D:\sem 6\capstone subject\lab>git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 538 bytes | 269.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Abstroar/capstone_lab_week_1.git
+   f33dc3b..c4a952a  main -> main
+
+D:\sem 6\capstone subject\lab>git log
+commit c4a952aaa7ab8a4ecc606336e2f6b11dd8d6ff93 (HEAD -> main, origin/main)
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:48:20 2025 +0530
+
+    added test 3 foler as well as file
+
+commit f33dc3ba86d696339860d3259f7e9ffb64722a6f
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:46:33 2025 +0530
+
+    added test 2s
+
+commit bdb5a61ec6375093ab0e47bc842d14e23a91250c
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:34:28 2025 +0530
+
+    Some changes to the file test1
+
+commit ac5860fb1772f835be29e52c9198c0938db99ee6
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:30:59 2025 +0530
+
+    A new folder with 1 folder and file is added
+
+commit 8101a6c81a73608dd524dbb4451a6911499f531f
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:16:51 2025 +0530
+
+    first commit
+
+D:\sem 6\capstone subject\lab>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    week_1_project/New folder/test2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\sem 6\capstone subject\lab>git add .
+
+D:\sem 6\capstone subject\lab>git commit -m "delted test file 2  "
+[main 2dfdbfb] delted test file 2
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 week_1_project/New folder/test2.txt
+
+D:\sem 6\capstone subject\lab>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 422 bytes | 422.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Abstroar/capstone_lab_week_1.git
+   c4a952a..2dfdbfb  main -> main
+
+D:\sem 6\capstone subject\lab>git log
+commit 2dfdbfb33563c725a5fc32ebe24b60d3e5e8682e (HEAD -> main, origin/main)
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:50:09 2025 +0530
+
+    delted test file 2
+
+commit c4a952aaa7ab8a4ecc606336e2f6b11dd8d6ff93
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:48:20 2025 +0530
+
+    added test 3 foler as well as file
+
+commit f33dc3ba86d696339860d3259f7e9ffb64722a6f
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:46:33 2025 +0530
+
+    added test 2s
+
+commit bdb5a61ec6375093ab0e47bc842d14e23a91250c
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:34:28 2025 +0530
+
+    Some changes to the file test1
+
+commit ac5860fb1772f835be29e52c9198c0938db99ee6
+Author: Abstroar <115562502+Abstroar@users.noreply.github.com>
+Date:   Mon Jan 6 12:30:59 2025 +0530
+
+    A new folder with 1 folder and file is added
+
+D:\sem 6\capstone subject\lab>git checkout bdb5a61ec6375093ab0e47bc842d14e23a91250c
+Note: switching to 'bdb5a61ec6375093ab0e47bc842d14e23a91250c'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at bdb5a61 Some changes to the file test1
+
+D:\sem 6\capstone subject\lab>git status
+HEAD detached at bdb5a61
+nothing to commit, working tree clean
+
+D:\sem 6\capstone subject\lab>git checkout main
+Previous HEAD position was bdb5a61 Some changes to the file test1
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+D:\sem 6\capstone subject\lab>for i in range(len(boxes))

@@ -1,0 +1,8 @@
+setTimeout(() => {
+console.log("setTimeout executed after 2 seconds.");
+        }, 2000);
+let counter = 0;
+setInterval(() => {
+    counter++;
+    console.log( `setInterval update #${counter} (every 1 second).`);
+    }, 1000);

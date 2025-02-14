@@ -1,0 +1,4 @@
+const arrow = (a, b) => a + b;
+function normal(a, b) {
+    return a - b;}
+console.log( `Arrow: ${arrow(5, 3)}, Normal: ${normal(5, 3)}`);
