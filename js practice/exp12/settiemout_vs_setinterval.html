@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout vs setInterval</title>
+</head>
+<body>
+    <h1>setTimeout vs setInterval</h1>
+    <p id="timeout"></p>
+    <p id="interval"></p>
+    <script>
+        // setTimeout: Executes once after 2 seconds
+        setTimeout(() => {
+            document.getElementById('timeout').textContent = "setTimeout executed after 2 seconds.";
+        }, 2000);
+
+        // setInterval: Executes every 1 second
+        let counter = 0;
+        setInterval(() => {
+            counter++;
+            document.getElementById('interval').textContent = `setInterval update #${counter} (every 1 second).`;
+        }, 1000);
+    </script>
+</body>
+</html>

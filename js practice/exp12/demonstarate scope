@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrate Scope</title>
+</head>
+<body>
+    <h1>Demonstrate Scope</h1>
+    <p id="scope"></p>
+    <script>
+        let globalVar = "I am a global variable";
+        function demonstrateScope() {
+            let functionVar = "I am inside a function";
+            if (true) {
+                let blockVar = "I am inside a block";
+                console.log("Inside block:", blockVar);
+            }
+            console.log("Inside function:", functionVar);
+        }
+        demonstrateScope();
+        document.getElementById('scope').textContent = `Global Variable: ${globalVar}`;
+    </script>
+</body>
+</html>
