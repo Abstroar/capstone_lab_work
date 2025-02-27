@@ -1,3 +1,0 @@
-const obj = { name: "Bob" }; 
-obj.address = null;
-console.log( `age is ${obj.age}, address is ${obj.address}`);

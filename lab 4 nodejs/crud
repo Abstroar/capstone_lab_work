@@ -1,8 +1,0 @@
-let data = { name: "Abhilaksh" };
-console.log(`1st JSON: ${JSON.stringify(data)}`);
-data.age = 25;
-console.log(`2nd JSON: ${JSON.stringify(data)}`);
-data.age =12;
-console.log(`3rd JSON: ${JSON.stringify(data)}`);
-delete data.name;
-console.log(`Final JSON: ${JSON.stringify(data)}`);

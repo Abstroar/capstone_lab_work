@@ -1,3 +1,0 @@
-let x;
-let y = null;
-console.log(`x is undefined: ${x}, y is null: ${y}`);
